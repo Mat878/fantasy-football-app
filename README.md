@@ -26,3 +26,8 @@ downlaod geckdriver
 pip install those 3 libraries
 run db file
 then can run file
+
+## useful links
+
+API blog
+fpl reports 2 pages
