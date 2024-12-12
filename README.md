@@ -2,7 +2,7 @@
 
 This is an application for the Fantasy Premier League, a game based on the English Premier League. Fantasy football allows participants to create a virtual team of real life football players. These teams then earn points based on the actual performances of players in premier league matches. The application displays sorted fixtures and player statistics for up to 5 weeks. It also shows the goalscorcer and clean sheet odds for the upcoming gameweek.
 
-<img width="974" alt="screenshot" src="https://github.com/user-attachments/assets/5d1de67b-98dd-46d5-98f7-78ff5f410e20">
+
 
 ## Background to project
 
