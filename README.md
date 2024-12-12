@@ -4,10 +4,9 @@ This is an application for the Fantasy Premier League, a game based on the Engli
 
 ![image](https://github.com/user-attachments/assets/2a6d0303-9afe-4efb-bdaa-42e607e92261)
 
-
 ## Background to project
 
-I decided to undertake this personal projects when, like most FPL managers, I attempted to gain a competitive edge. I wanted to know teams with best fixtures on average for x number of weeks, and although official fpl apps shows fixtures can only sort by fixtures for a particualr game week and not say 'teams with best fixtures in next 3 gameweeks or 5 gameweeks'. Same idea for xG and xA stats which although can be seen for indiviual player cannot be used when sorting players so see who has best of those statis in x past gameweeks. I wanted an application where I could see the fixtures and stats for up 5 gameweeks, and change accordingly. Another resource which I relied was odds genreated from bookies, which some websites already had on the website but have everything in one place I wanted to have those display alongside (goalscorer and clean sheet odds)
+I decided to undertake this personal project because I was unsatisfied with how fixtures and statistics were presented in the official fantasy football app. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds generated from bookies, which some websites already present, but it made things easier having these presented alongside the sorted fixtures and statistics.
 
 ## about project
 - fixture query official fpl API, then sorted within a SQL db (alongside team name is fixture idfficult, I then sorted using that and presented in table accordingly and then presented in GUI (Pyqt6). Also color coded to illustrate fixture difficult, this was made to be the same as the official FPL app
