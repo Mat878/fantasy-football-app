@@ -19,7 +19,7 @@ class Window(QWidget):
         """Initialize Window class"""
         super().__init__()
         self.resize(1300, 650)
-        self.setWindowTitle("Fantasy Football Tool")
+        self.setWindowTitle("Fantasy Football App")
 
         self.combo1 = QComboBox(self)
         self.combo1.addItems(['1', '2', '3', '4', '5'])
