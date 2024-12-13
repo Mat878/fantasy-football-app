@@ -8,10 +8,10 @@ This is an application for the Fantasy Premier League, a game based on the Engli
 
 I decided to undertake this personal project because I was unsatisfied with how fixtures and statistics were presented in the official fantasy football app. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds generated from bookies, which some websites already present, but it made things easier having these presented alongside the sorted fixtures and statistics.
 
-## about project
-- fixture query official fpl API, then sorted within a SQL db (alongside team name is fixture idfficult, I then sorted using that and presented in table accordingly and then presented in GUI (Pyqt6). Also color coded to illustrate fixture difficult, this was made to be the same as the official FPL app
-- Player stats, need db file to run in order to gather data which take ~15min. Then when run main it sorts and displays top 20 players. Has xG and xA and xG + xA.
-- To get odds and goalscorer odds use selenium to webscape and then present in table
+## About project
+- To present the fixtures, first the official FPL API is queried to obtain a list of fixture with their associated fixture difficulty rating. This data in then stored in a SQL database. The data is then sorted and presented accordingly. 
+- For the player statistics, there is python script seperate to the main file which when run creates a database with the player data gathered from the FPL API. Then when the main file is run the sorted players are displayed. The statistics displayed are xG, xA and xG + xA.
+- Using Selenium I webscape the goalscorer and clean sheet odds, these are then displayed alongside the fixtures and player statistics.
 
 ## dependentcies
 - python
@@ -28,6 +28,7 @@ run db file
 then can run file
 
 ## useful links
-fpl link
-API blog
-fpl reports 2 pages
+- https://fantasy.premierleague.com
+- https://www.fantasyfootballreports.com/premier-league-clean-sheet-odds/
+- https://www.fantasyfootballreports.com/premier-league-goalscoring-odds/
+- https://medium.com/@frenzelts/fantasy-premier-league-api-endpoints-a-detailed-guide-acbd5598eb19
