@@ -15,6 +15,7 @@ I decided to undertake this personal project because I felt unsatisfied with how
 - Seleniun
 - PyQt6
 - Requests
+- GeckoDriver. Download here: https://github.com/mozilla/geckodriver/releases. Note this is only for Firefox.
 
 ## Getting Started
 1. Clone this repository to your local machine
