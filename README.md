@@ -20,7 +20,7 @@ I decided to undertake this personal project because I felt unsatisfied with how
 ## Getting Started
 1. Clone this repository to your local machine
 2. Install the required dependencies
-3. Run the db_setup.py file (Note: this may take up to 20 minutes to run)
+3. Run db_setup.py
 4. Then run main.py
 
 ## Useful Links
