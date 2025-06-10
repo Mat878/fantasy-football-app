@@ -16,7 +16,7 @@ I decided to undertake this personal project because I felt unsatisfied with how
 
 ## Dependencies
 - Python
-- sqlite3
+- SQLite3
 - Seleniun
 - PyQt6
 - Requests
