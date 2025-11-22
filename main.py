@@ -7,9 +7,11 @@ from PyQt6.QtGui import QColor
 from PyQt6.QtCore import Qt
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 from datetime import datetime
 
 
@@ -223,7 +225,7 @@ class Window(QWidget):
                 self.table1.item(i, j).setTextAlignment(0x0080 | 0x0004)
 
                 try:
-                    if len(fixture_list[i][j+4]) > 6:  # dgw scenario
+                    if len(fixture_list[i][j+4]) > 6:  # double gameweek scenario
                         num = round((int(fixture_list[i][j + 4][4]) + int(fixture_list[i][j+4][11]))/2)
                         self.colour_fixtures(i, j, num)
                     else:
@@ -253,9 +255,11 @@ class Odds:
     """A class to webscrape the cleansheet and goalscoring odds for the current gameweek"""
     def clean_sheet_odds(self):
         """Webscrape cleansheet odds"""
-        firefox_options = Options()
-        firefox_options.add_argument('--headless')
-        driver = webdriver.Firefox(options=firefox_options)
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--window-size=1920,1080')
+
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=chrome_options)
 
         clean_sheet = []
 
@@ -274,9 +278,11 @@ class Odds:
 
     def goalscorer_odds(self):
         """Webscrape goalscorer odds"""
-        firefox_options = Options()
-        firefox_options.add_argument('--headless')
-        driver = webdriver.Firefox(options=firefox_options)
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--window-size=1920,1080')
+
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=chrome_options)
 
         goalscorers = []
 
@@ -376,15 +382,15 @@ class Fixtures:
 
                 # statement inserts fixture and handles double gameweek scenario
                 c.execute(f"""UPDATE teams_fixtures
-                            SET {'GW' + str(i)} = 
-                                CASE
-                                    WHEN {'GW' + str(i)} IS NULL THEN '{fix2}'
-                                    ELSE {'GW' + str(i)} || '|{fix2}'
-                                END,
-                                total = total + {gw[j]['team_h_difficulty']},
-                                count = count + 1
-                            WHERE id = {gw[j]['team_h'] - 1}
-                            """)
+                              SET {'GW' + str(i)} = 
+                                  CASE
+                                      WHEN {'GW' + str(i)} IS NULL THEN '{fix2}'
+                                      ELSE {'GW' + str(i)} || '|{fix2}'
+                                  END,
+                                  total = total + {gw[j]['team_h_difficulty']},
+                                  count = count + 1
+                              WHERE id = {gw[j]['team_h'] - 1}
+                              """)
 
             # statement to deal with blank fixtures
             c.execute(f"""UPDATE teams_fixtures 
