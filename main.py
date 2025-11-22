@@ -119,7 +119,7 @@ class Window(QWidget):
 
         self.table6 = QTableWidget(self)
         self.table6.move(1000, 330)
-        self.table6.setRowCount(30)
+        self.table6.setRowCount(27)
         self.table6.setColumnCount(2)
         self.table6.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.table6.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
@@ -155,7 +155,7 @@ class Window(QWidget):
                 self.table5.setItem(i, j, item)
         
         gs = odds.goalscorer_odds()
-        for i in range(0, 30):
+        for i in range(0, 27):
             for j in range(0, 2):
                 item = QTableWidgetItem(str(gs[i][j]))
                 item.setFlags(Qt.ItemFlag.ItemIsEnabled)
