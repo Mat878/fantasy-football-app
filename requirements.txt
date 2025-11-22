@@ -1,0 +1,4 @@
+selenium
+PyQt6
+requests
+webdriver-manager
