@@ -68,4 +68,6 @@ def create_player_stats_table():
 
 
 if __name__ == "__main__":
+    print("Database setup started")
     create_player_stats_table()
+    print("Database setup completed successfully")
