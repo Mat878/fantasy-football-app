@@ -12,7 +12,7 @@ This application displays:
 
 ## Background to Project
 
-I decided to undertake this project because I felt unsatisfied with how fixtures and statistics were presented in the official fantasy football game. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds for the upcoming gameweek, which some websites already present, but it made things easier having these shown alongside the sorted fixtures and statistics.
+I decided to undertake this project because I felt unsatisfied with how fixtures and statistics were presented in the official fantasy football game. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds for the upcoming gameweek, which some websites already present, but it made things easier having these shown alongside the fixtures and statistics.
 
 ## Dependencies
 - Python
