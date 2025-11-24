@@ -25,7 +25,7 @@ I decided to undertake this project because I felt unsatisfied with how fixtures
 ## Getting Started
 1. Clone this repository to your local machine
 2. Install the dependencies
-3. (If you want the player statistics and fixtures for the current gameweek then run db_setup.py. This will take ~10min. You can also copy the database from the sample db folder into the root folder if you just want to see it working.)
+3. (If you want the player statistics and fixtures for the current gameweek then run db_setup.py. This will take ~10min. You can also copy the database from the sample db folder into the root folder if you just want to see it working)
 4. Then run main.py
 
 ## Useful Links
