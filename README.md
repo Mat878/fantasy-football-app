@@ -12,7 +12,7 @@ This application displays:
 
 ## Background to Project
 
-I decided to undertake this project because I felt unsatisfied with how fixtures and statistics were presented in the official fantasy football game. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds from bookies, which some websites already present, but it made things easier having these shown alongside the sorted fixtures and statistics.
+I decided to undertake this project because I felt unsatisfied with how fixtures and statistics were presented in the official fantasy football game. Although fixtures and their difficultly for each team were shown, there was no way to sort the fixtures by difficulty, except by individual gameweek. I couldn't easily see which teams had the best or worst fixtures for the next x number of weeks. The same thing applied to player statistics which, although can be seen for each indiviual player and compared between players, cannot be used to sort players to see who has best of those statistics in the past x number of weeks. Another resource which I rely on is odds for the upcoming gameweek, which some websites already present, but it made things easier having these shown alongside the sorted fixtures and statistics.
 
 ## Dependencies
 - Python
@@ -25,7 +25,7 @@ I decided to undertake this project because I felt unsatisfied with how fixtures
 ## Getting Started
 1. Clone this repository to your local machine
 2. Install the dependencies
-3. (If you want the latest player statistics and fixtures for the current gameweek then run db_setup.py. This will take ~10min. You can also copy the database from the sample db folder into the root folder if you just want to see it working.)
+3. (If you want the player statistics and fixtures for the current gameweek then run db_setup.py. This will take ~10min. You can also copy the database from the sample db folder into the root folder if you just want to see it working.)
 4. Then run main.py
 
 ## Useful Links
